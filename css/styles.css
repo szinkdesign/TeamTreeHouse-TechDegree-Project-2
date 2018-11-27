@@ -1,0 +1,98 @@
+body {
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  margin: 0px;
+  line-height: 1.5;
+}
+
+section {
+  padding: 0px 15px 40px 15px;
+}
+
+h1, h2, h3, h4 {
+  color: #4d4d4d;
+  background-color: inherit;
+}
+
+h1 {
+  font-size: 1.6em;
+  font-weight: bold;
+  display: inline-block;
+}
+
+h2 {
+  font-size: 1em;
+  margin: 40px auto 20px auto;
+  display: inline-block;
+}
+
+h3 {
+  font-size: 1.4em;
+  font-weight: 100;
+}
+
+img {
+  display:inline;
+  max-width: 100%;
+}
+
+ul {
+  margin: 5px 0px;
+  padding: 0px;
+}
+
+ul li {
+  margin: 5px 0px;
+  padding: 10px 0px;
+  color: inherit;
+  background-color: white;
+  list-style-type: none;
+}
+li a {
+  text-decoration: none;
+  color: #575757;
+  background-color: inherit;
+  font-weight: bold;
+  font-size: .9em;
+}
+
+p {
+  color: gray;
+  background-color: inherit;
+}
+
+#hero-section, footer {
+  color: #575757;
+  background-color: #fafafa;
+}
+
+footer {
+  padding: 0px 15px 20px 15px;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  font-weight: bold;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid gray;
+}
+
+footer ul li {
+  display: flex;
+  color: inherit;
+  background-color: inherit;
+}
+
+@media screen and (min-width: 1024px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
