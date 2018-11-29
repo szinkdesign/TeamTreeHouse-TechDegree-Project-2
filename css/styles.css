@@ -7,6 +7,7 @@ body {
 
 section {
   padding: 0px 15px 40px 15px;
+  clear: both;
 }
 
 h1, h2, h3, h4 {
@@ -24,10 +25,17 @@ h2 {
   font-size: 1em;
   margin: 40px auto 20px auto;
   display: inline-block;
+  width: 100%;
 }
 
 h3 {
   font-size: 1.4em;
+  font-weight: 100;
+  margin-bottom: 0em;
+}
+
+h4 {
+  font-size: 1.2em;
   font-weight: 100;
 }
 
@@ -66,6 +74,12 @@ p {
   background-color: #fafafa;
 }
 
+#portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 footer {
   padding: 0px 15px 20px 15px;
 }
@@ -77,22 +91,88 @@ footer a {
   font-weight: bold;
 }
 
-footer ul {
-  display: flex;
-  justify-content: space-between;
+#divider {
+  display: inline-block;
+  width: 100%;
   border-top: 1px solid gray;
 }
 
 footer ul li {
-  display: flex;
+  display: inline-block;
+  float: left;
   color: inherit;
   background-color: inherit;
 }
 
-@media screen and (min-width: 1024px) {
-
+.mobile-nav {
+  display: inline-block;
 }
 
-@media screen and (min-width: 768px) {
+.desktop-nav {
+  display: none;
+}
 
+.nav-left {
+  float: left;
+}
+
+.nav-right {
+  float: right;
+}
+
+@media only screen and (min-width: 768px) {
+  section {
+    padding: 0px 30px 40px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  ul li {
+    padding: 10px 20px;
+    color: inherit;
+    background-color: inherit;
+  }
+
+  .profile-container {
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+  }
+
+  .profile-container img {
+    float: right;
+    width: 30%;
+  }
+
+  .profile-container h4 {
+    float: left;
+    width: 70%;
+    text-align: left;
+    margin: 0px;
+  }
+
+  .container {
+    width: 49%;
+  }
+
+  .desktop-nav {
+    display: inline;
+  }
+  .mobile-nav {
+    display: none;
+  }
+  .nav {
+    float: left;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .container {
+    width: 32%;
+  }
 }
