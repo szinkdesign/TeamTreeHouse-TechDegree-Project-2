@@ -109,6 +109,7 @@ footer a {
   display: inline-block;
   width: 100%;
   border-top: 1px solid gray;
+  margin-top: 20px;
 }
 
 footer ul li {
